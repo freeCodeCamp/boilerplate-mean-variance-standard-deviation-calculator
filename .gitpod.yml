@@ -1,7 +1,8 @@
 image: gitpod/workspace-python-3.8
 
 tasks:
-  - init: poetry shell && poetry install
+  - init: pip install -r requirements.txt
+    command: python test_module.py
 
 vscode:
   extensions:
